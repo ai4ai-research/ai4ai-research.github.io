@@ -1,0 +1,321 @@
+[
+  {
+    "asset": "assets/figure-1.jpg",
+    "uploaded_filename": "ai4aiframe.jpg",
+    "placement": "Overview figure, enlargement dialog, social-preview metadata",
+    "source_dimensions": [
+      2048,
+      1046
+    ],
+    "web_dimensions": [
+      2048,
+      1046
+    ],
+    "encoding": "original JPEG, unchanged bytes",
+    "original_sha256": "e8f7a97455889a54ef4b0f8d84dc2b24e0d200ae3a58f481d50b7d3f1253d97d"
+  },
+  {
+    "asset": "assets/illustration-l0.webp",
+    "original": "originals/illustration-l0.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (1).png",
+    "label": "L0 human-controlled reference",
+    "placement": "L0 reference row",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      72,
+      136,
+      1190,
+      1143
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "9cd14419c7f0650989820458e025b731b4f904b59d161247a7bf1099642e2d80"
+  },
+  {
+    "asset": "assets/illustration-l1.webp",
+    "original": "originals/illustration-l1.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (2).png",
+    "label": "L1 AI-provided search direction",
+    "placement": "L1 framework tab",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      86,
+      152,
+      1195,
+      1092
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "b1865d9b58384ccef3a61ba63b2aa8b85b636cf9d2f304da7c668c5b988cfefb"
+  },
+  {
+    "asset": "assets/illustration-l2.webp",
+    "original": "originals/illustration-l2.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (3).png",
+    "label": "L2 AI-provided search space",
+    "placement": "L2 framework tab",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      186,
+      103,
+      1090,
+      1175
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "8f5fa59b4663bd8c0cbd5be47002191c9ae7567feb1b9326a5f14cb4ebcdbfb9"
+  },
+  {
+    "asset": "assets/illustration-l3.webp",
+    "original": "originals/illustration-l3.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (4).png",
+    "label": "L3 AI-provided evaluation signal",
+    "placement": "L3 framework tab",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      248,
+      128,
+      1167,
+      1162
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "09bcd45623a9521afbf8652167a05badd8c834a25268cc8307a8d8b4fafe8607"
+  },
+  {
+    "asset": "assets/robot-learning.webp",
+    "original": "originals/robot-learning.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (5).png",
+    "label": "AI4AI Learning",
+    "placement": "Learning family card",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      175,
+      91,
+      1141,
+      1168
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "a65d7e64beef8cc46a0356442d6a725f02f8512761ca49ab1ab30a3da626e8b8"
+  },
+  {
+    "asset": "assets/robot-inference.webp",
+    "original": "originals/robot-inference.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (6).png",
+    "label": "AI4AI Inference",
+    "placement": "Inference family card",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      237,
+      93,
+      1112,
+      1186
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "3adf706557e6004fe0b1077744d3b6569a2d0d7cfcfbcf59e6b43dfa0b088be1"
+  },
+  {
+    "asset": "assets/robot-data.webp",
+    "original": "originals/robot-data.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (7).png",
+    "label": "AI4AI Data",
+    "placement": "Data family card",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      179,
+      117,
+      1076,
+      1148
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "7267f93211bac534505431fe227f02c6af844415649cf5e7ea55ce09f3b75535"
+  },
+  {
+    "asset": "assets/robot-infrastructure.webp",
+    "original": "originals/robot-infrastructure.png",
+    "uploaded_filename": "ChatGPT Image 2026年9月23日 11_10_21 (8).png",
+    "label": "AI4AI Infrastructure",
+    "placement": "Infrastructure family card",
+    "source_dimensions": [
+      1254,
+      1254
+    ],
+    "crop": [
+      79,
+      67,
+      1221,
+      1170
+    ],
+    "web_dimensions": [
+      960,
+      960
+    ],
+    "alpha_preserved": true,
+    "encoding": "lossless WebP; resized from source without upscaling",
+    "original_sha256": "dedde1515fae667f557a9de64f5869c1d5556c9bc9306640f987b14a39c77d09"
+  },
+  {
+    "asset": "assets/ai4ai-logo.svg",
+    "source": "AI4AI-logo/svg/ai4ai-logo.svg",
+    "placement": "Header brand and hero title",
+    "encoding": "copied from the supplied logo pack, unchanged bytes",
+    "sha256": "5c59f4fc66954edc5b3a9e9001f8c2330f4e5c0c67b2030091b37c25da8ad177"
+  },
+  {
+    "asset": "assets/ai4ai-logo-on-dark.svg",
+    "source": "AI4AI-logo/svg/ai4ai-logo-on-dark.svg",
+    "placement": "Footer brand on the dark band",
+    "encoding": "copied from the supplied logo pack, unchanged bytes",
+    "sha256": "cc7640764b8ac387299195be8dc4327d4f1b954c92e11576883da78bcf98ec2d"
+  },
+  {
+    "asset": "assets/ai4ai-icon.svg",
+    "source": "AI4AI-logo/svg/ai4ai-icon.svg",
+    "placement": "SVG favicon",
+    "encoding": "copied from the supplied logo pack, unchanged bytes",
+    "sha256": "212a8e0157f8add56a5e8315faa80fef1bfe3383bcfe6085fa01234308976882"
+  },
+  {
+    "asset": "assets/favicon.ico",
+    "source": "AI4AI-logo/favicon/favicon.ico",
+    "placement": "Fallback favicon",
+    "encoding": "copied from the supplied logo pack, unchanged bytes",
+    "sha256": "183c042df187f3dfc8a4e4e37e5ffa05fb5d60e8552e102b7040f545788a3a2c"
+  },
+  {
+    "asset": "assets/apple-touch-icon.png",
+    "source": "AI4AI-logo/favicon/apple-touch-icon.png",
+    "placement": "Apple touch icon",
+    "encoding": "copied from the supplied logo pack, unchanged bytes",
+    "sha256": "066903eaef439789650db7f362ad0606c4b672299bc76a7ec4b6830f84127114"
+  },
+  {
+    "asset": "assets/figure-2.webp",
+    "source": "AI4AI_survey.pdf (72 pages), page 14, Figure 2",
+    "placement": "L1 panel: history-conditioned direction selection",
+    "web_dimensions": [
+      1925,
+      1053
+    ],
+    "encoding": "rendered at 288 dpi, cropped above the caption, whitespace-trimmed, WebP quality 92",
+    "sha256": "9f9364ffbcbbe633d9843a3ac54dc1bf6c5b1ca07a8980d664f2dab02c96144f"
+  },
+  {
+    "asset": "assets/figure-3.webp",
+    "source": "AI4AI_survey.pdf (72 pages), page 16, Figure 3",
+    "placement": "L1 panel: taxonomy of L1 direction discovery",
+    "web_dimensions": [
+      2046,
+      542
+    ],
+    "encoding": "rendered at 288 dpi, cropped above the caption, whitespace-trimmed, WebP quality 92",
+    "sha256": "4e8495eb02e4933c2cdf3b90b554ce18bae9b8f4e293f79fbb646be5be272331"
+  },
+  {
+    "asset": "assets/figure-4.webp",
+    "source": "AI4AI_survey.pdf (72 pages), page 22, Figure 4",
+    "placement": "L2 panel: AI construction of the active search space",
+    "web_dimensions": [
+      2009,
+      718
+    ],
+    "encoding": "rendered at 288 dpi, cropped above the caption, whitespace-trimmed, WebP quality 92",
+    "sha256": "bc95d36d4b8747e791592b555fcc2f0c9a841809ab42ee4d21415b7fbe371302"
+  },
+  {
+    "asset": "assets/figure-5.webp",
+    "source": "AI4AI_survey.pdf (72 pages), page 24, Figure 5",
+    "placement": "L2 panel: component-based taxonomy of L2 search spaces",
+    "web_dimensions": [
+      2046,
+      585
+    ],
+    "encoding": "rendered at 288 dpi, cropped above the caption, whitespace-trimmed, WebP quality 92",
+    "sha256": "7e80fa05ead05e6436c21554f62602a0f02700da862a50daf6277abc2979d01a"
+  },
+  {
+    "asset": "assets/figure-6.webp",
+    "source": "AI4AI_survey.pdf (72 pages), page 29, Figure 6",
+    "placement": "L3 panel: taxonomy of L3 evaluation signals",
+    "web_dimensions": [
+      2046,
+      626
+    ],
+    "encoding": "rendered at 288 dpi, cropped above the caption, whitespace-trimmed, WebP quality 92",
+    "sha256": "eb3237bf84d24668e52a5bfaf94d07cce3a2f76acbe366766768836908fa3335"
+  },
+  {
+    "asset": "assets/figure-7.webp",
+    "source": "AI4AI_survey.pdf (72 pages), page 35, Figure 7",
+    "placement": "Families section dialog: overview of AI4AI applications",
+    "web_dimensions": [
+      1642,
+      808
+    ],
+    "encoding": "rendered at 288 dpi, cropped above the caption, whitespace-trimmed, WebP quality 92",
+    "sha256": "be42bebd4a4474706af65181843d868378e275dbe26f2bb888c0a27651a26e33"
+  },
+  {
+    "asset": "assets/figure-8.webp",
+    "source": "AI4AI_survey.pdf (72 pages), page 35, Figure 8",
+    "placement": "Families section dialog: taxonomy of AI4AI applications",
+    "web_dimensions": [
+      2046,
+      1047
+    ],
+    "encoding": "rendered at 288 dpi, cropped above the caption, whitespace-trimmed, WebP quality 92",
+    "sha256": "48d019a8b33edaabd8272e8c5b22149bbf4d6b13dd5fd5cec28c0073ebc7c67f"
+  }
+]
