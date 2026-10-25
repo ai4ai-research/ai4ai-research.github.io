@@ -112,3 +112,10 @@ v3 中“暂未同步”的文献库已按新版稿件重建（上一版数据�
 - AIE-Bench [172] 与 DDSAS [281] 未找到可核验的链接，标题链接到 Google Scholar 标题检索（图标为放大镜）。
 
 **仍需作者核对**：正文的 “Evolution of Kernels / CUDA kernel evolution” 引用 [87]，但 [87] 是 “Code evolution for control …”（见 v3 一节）。网页照稿件收录。
+## Latest source archive: AI4AI_survey (1).zip
+
+The supplied LaTeX project compiles without content changes to 80 pages, 10 figures and 336 bibliography entries. The site uses the new Figure 2 control framework, the v6 L2 construction mechanism, and the new Figure 7 evaluation mechanism. The four taxonomy figures are exported as SVG directly from the compiled PDF, preserving all reference numbers and the author's typography and colors. Raster figures are composited on white, cropped with a small buffer, and exported as lossless WebP without distortion.
+
+All 319 previous catalogue records are retained and matched to their BibTeX entries; 17 newly cited benchmarks bring the total to 336 references, 297 surveyed works and 54 benchmarks. Reference numbers and bibliography pages come from the compiled PDF's citation destinations. Figure placements follow Figures 4, 6, 8 and 10. Table 10 is rebuilt from the latest source's 15 representative rows. Numbered text placements follow the current source sections. Benchmarks receive no L0–L3 assignment. RLAIF and Jr. AI Scientist now display their full source titles.
+
+The downloadable paper is assets/AI4AI_survey_latest.pdf. Earlier public image and PDF URLs are retained for existing links; the current page uses the new source-derived files. The archive and unused original images are kept locally.

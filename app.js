@@ -9,7 +9,7 @@
     const icon = (name, extra = '') => `<svg class="icon ${extra}" aria-hidden="true"><use href="#i-${name}"></use></svg>`;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const scrollToElement = el => el?.scrollIntoView({behavior: reducedMotion ? 'auto' : 'smooth', block: 'start'});
-    const paperURL = page => `${window.AI4AI_PDF_URL || 'assets/AI4AI_survey.pdf'}${page ? `#page=${Number(page)}` : ''}`;
+    const paperURL = page => `${window.AI4AI_PDF_URL || 'assets/AI4AI_survey_latest.pdf'}${page ? `#page=${Number(page)}` : ''}`;
     const externalURL = value => /^https?:\/\//i.test(value || '') ? value : null;
     if (window.AI4AI_PDF_URL) {
       $$('.paper-link').forEach(link => {
@@ -197,6 +197,22 @@
         if (dialogTrigger?.isConnected) dialogTrigger.focus({preventScroll: true});
       });
     });
+    let figureScale = 1;
+    const figureImage = $('#dialog-image');
+    const figureViewport = $('.figure-dialog-image');
+    function setFigureScale(scale) {
+      figureScale = Math.max(.75, Math.min(5, scale));
+      figureImage.style.width = `${figureScale * 100}%`;
+      $('#figure-zoom-level').textContent = `${Math.round(figureScale * 100)}%`;
+      $('#figure-zoom-out').disabled = figureScale <= .75;
+      $('#figure-zoom-in').disabled = figureScale >= 5;
+    }
+    $('#figure-zoom-out').addEventListener('click', () => setFigureScale(figureScale - .25));
+    $('#figure-zoom-in').addEventListener('click', () => setFigureScale(figureScale + .25));
+    $('#figure-zoom-fit').addEventListener('click', () => {
+      setFigureScale(1);
+      figureViewport.scrollTo({left: 0, top: 0});
+    });
     $$('[data-figure]').forEach(button => button.addEventListener('click', () => {
       const caption = button.dataset.caption || 'Survey figure';
       $('#dialog-image').src = button.dataset.figure;
@@ -204,6 +220,8 @@
       $('#figure-dialog-caption').textContent = caption;
       $('#figure-dialog-title').textContent = /^Figure \d+/.test(caption) ? caption.match(/^Figure \d+/)[0] : 'Survey taxonomy';
       showDialog($('#figure-dialog'), button);
+      setFigureScale(button.dataset.figureKind === 'taxonomy' ? Math.max(1.5, 1200 / figureViewport.clientWidth) : 1);
+      figureViewport.scrollTo({left: 0, top: 0});
     }));
 
     // Citations.
@@ -354,12 +372,12 @@
     function notesFor(p) {
       const notes = [];
       const has = test => p.placements.some(test);
-      if (has(x => x.type === 'figure' && x.level === 'L3')) notes.push('Figure 6 lists candidate evaluation artifacts, not unconditional L3 assignments: only configurations in which the AI-generated signal causally changes selection, training, or acceptance count as L3.');
-      if (has(x => x.type === 'figure' && x.level === 'L2')) notes.push('Figure 5 attributes L2 by component: the label refers to the search-space component AI constructs or revises, not to the whole system.');
-      if (has(x => x.boundary)) notes.push('Figure 5 marks this work as a boundary case rather than an unqualified example of primitive or operator construction.');
+      if (has(x => x.type === 'figure' && x.level === 'L3')) notes.push('Figure 8 lists candidate evaluation artifacts, not unconditional L3 assignments: only configurations in which the AI-generated signal causally changes selection, training, or acceptance count as L3.');
+      if (has(x => x.type === 'figure' && x.level === 'L2')) notes.push('Figure 6 attributes L2 by component: the label refers to the search-space component AI constructs or revises, not to the whole system.');
+      if (has(x => x.boundary)) notes.push('Figure 6 marks this work as a boundary case rather than an unqualified example of primitive or operator construction.');
       if (has(x => /†$/.test(x.label || ''))) notes.push('Marked † in Table 5: typically used for testing or review; L3 only if the AI signal changes downstream evaluation, selection, or operative acceptance.');
       if (has(x => /§$/.test(x.label || ''))) notes.push('Marked § in Table 9: a general-purpose EDA application.');
-      if (has(x => x.starred)) notes.push('Marked * in Figure 8: the configuration-dependent condition used in the application tables applies.');
+      if (has(x => x.starred)) notes.push('Marked * in Figure 10: the configuration-dependent condition used in the application tables applies.');
       if (p.basis === 'chapter') notes.push('The level reflects the chapter in which the survey discusses this work; no table or taxonomy figure assigns it a level.');
       if (p.kind === 'Benchmark' && !p.levels.length) notes.push('Benchmarks are listed by the development task they support; a benchmark is not itself assigned a control-source level.');
       if (!p.annotated) notes.push('Cited outside the level chapters and the applications section; listed for completeness without a level or family.');

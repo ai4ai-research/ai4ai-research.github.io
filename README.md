@@ -2,7 +2,7 @@
 
 AI4AI: Toward AI-discovered Superintelligence
 
-这是一个完整的英文综述静态网站。页面结构参考 EVLA Survey。v3 已对齐新版稿件（72 页）：作者与通讯作者、摘要与关键词、各节页码、Figure 1–8、第 8 节开放问题与未来工作；并启用用户提供的 AI4AI logo 与 favicon。v4 按新版稿件重建了文献库：319 条参考文献按新编号与页码收录，第 4–7 节（L1–L3 各章与 Applications & Benchmarks）提到的全部 280 项工作带有稿件给出的等级、应用分支与出处；点击标题直接打开论文链接。构建规则见 `SOURCE_NOTES.md` 的 v4 一节。此交付不包含公网部署。
+这是一个完整的英文综述静态网站。页面结构参考 EVLA Survey。v3 已对齐新版稿件（72 页）：作者与通讯作者、摘要与关键词、各节页码、Figure 1–8、第 8 节开放问题与未来工作；并启用用户提供的 AI4AI logo 与 favicon。v4 按新版稿件重建了文献库：319 条参考文献按新编号与页码收录，第 4–7 节（L1–L3 各章与 Applications & Benchmarks）提到的全部 280 项工作带有稿件给出的等级、应用分支与出处；点击标题直接打开论文链接。构建规则见 `SOURCE_NOTES.md` 的 v4 一节。网站已通过 GitHub Pages 发布：https://ai4ai-research.github.io/。
 
 ## 运行
 
@@ -77,3 +77,9 @@ python tools/make_standalone.py
 ## 权利与隐私
 
 没有加入分析追踪、账户登录、自动提交或外部 API。机构标志和论文图片来自所给稿件；原论文、标志和其他研究成果的权利归原权利人。这里未替其指定新许可证。
+
+## Latest manuscript and figure update
+
+The site now follows AI4AI_survey (1).zip: 80 pages, 10 figures, 336 references, 297 surveyed works and 54 benchmarks. Mechanism and taxonomy figures share one caption and framing system. Taxonomies use vector SVG and readable horizontal scrolling; the figure viewer supports zoom and fit. The current downloadable manuscript is `assets/AI4AI_survey_latest.pdf`. See `SOURCE_NOTES.md` and `ASSET_MANIFEST.json` for provenance.
+
+GitHub Pages publishes the root of `main` automatically after committed updates.

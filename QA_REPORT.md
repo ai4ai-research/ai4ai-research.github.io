@@ -26,3 +26,14 @@
 - 未捕获到 JavaScript 运行时异常。
 
 页面局部截图为了展示内容，会临时隐藏固定导航和返回顶部控件；交付的实际网页没有删除这些控件。
+
+
+## Latest source update: 2026-10-25
+
+- Supplied LaTeX source compiled successfully to an 80-page PDF with resolved citations and figure labels.
+- Ten source figures were visually inspected. Mechanism diagrams preserve aspect ratio and original source content; four taxonomies use vector SVG.
+- All local resource paths and sprite references resolve; HTML IDs are unique.
+- JavaScript syntax checks pass for app.js and data.js.
+- Catalogue: 336 unique bibliography records, 297 surveyed works, 54 benchmarks, and 15 rows from the current Table 10. All 319 prior records are mapped to current BibTeX entries.
+- Browser checks: L3 tab, newest benchmark search, details, current source and bibliography page links, figure Fit / zoom controls, and mobile figure dialog. At a 390 px viewport, the document and dialog stay within the viewport; dense taxonomies scroll inside their frames.
+- Original images and the source archive remain local; only source-derived web assets and the current PDF are prepared for publication.
