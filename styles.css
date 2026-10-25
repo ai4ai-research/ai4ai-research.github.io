@@ -884,7 +884,7 @@ a.paper-name { display: block; }
 .figure-dialog-tools .quiet-button { min-width: 30px; min-height: 32px; padding: 3px 8px; justify-content: center; border: 1px solid var(--line); border-radius: 5px; background: white; }
 .figure-dialog-tools output { min-width: 48px; color: var(--navy); text-align: center; font: 12px var(--mono); }
 .figure-dialog .figure-dialog-image { max-height: calc(90vh - 145px); padding: 12px; overflow: auto; overscroll-behavior: contain; background: #f0f5f9; }
-.figure-dialog .figure-dialog-image>img { width: 100%; max-width: none; height: auto; object-fit: contain; background: white; }
+.figure-dialog .figure-dialog-image>img { width: 100%; max-width: none; height: auto; margin-inline: auto; object-fit: contain; background: white; }
 .figure-dialog>p { background: #fff; }
 @media(max-width: 680px) {
   .survey-figure { margin-top: 20px; border-radius: 8px; }

@@ -202,11 +202,19 @@
     const figureViewport = $('.figure-dialog-image');
     function setFigureScale(scale) {
       figureScale = Math.max(.75, Math.min(5, scale));
-      figureImage.style.width = `${figureScale * 100}%`;
+      const style = getComputedStyle(figureViewport);
+      const horizontalPadding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+      const verticalPadding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+      const availableWidth = figureViewport.clientWidth - horizontalPadding;
+      const availableHeight = parseFloat(style.maxHeight) - verticalPadding;
+      const ratio = figureImage.naturalWidth / figureImage.naturalHeight;
+      const fitWidth = Number.isFinite(ratio) ? Math.min(availableWidth, availableHeight * ratio) : availableWidth;
+      figureImage.style.width = `${Math.round(fitWidth * figureScale)}px`;
       $('#figure-zoom-level').textContent = `${Math.round(figureScale * 100)}%`;
       $('#figure-zoom-out').disabled = figureScale <= .75;
       $('#figure-zoom-in').disabled = figureScale >= 5;
     }
+    figureImage.addEventListener('load', () => setFigureScale(figureScale));
     $('#figure-zoom-out').addEventListener('click', () => setFigureScale(figureScale - .25));
     $('#figure-zoom-in').addEventListener('click', () => setFigureScale(figureScale + .25));
     $('#figure-zoom-fit').addEventListener('click', () => {
