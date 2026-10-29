@@ -119,3 +119,10 @@ The supplied LaTeX project compiles without content changes to 80 pages, 10 figu
 All 319 previous catalogue records are retained and matched to their BibTeX entries; 17 newly cited benchmarks bring the total to 336 references, 297 surveyed works and 54 benchmarks. Reference numbers and bibliography pages come from the compiled PDF's citation destinations. Figure placements follow Figures 4, 6, 8 and 10. Table 10 is rebuilt from the latest source's 15 representative rows. Numbered text placements follow the current source sections. Benchmarks receive no L0–L3 assignment. RLAIF and Jr. AI Scientist now display their full source titles.
 
 The downloadable paper is assets/AI4AI_survey_latest.pdf. Earlier public image and PDF URLs are retained for existing links; the current page uses the new source-derived files. The archive and unused original images are kept locally.
+
+
+## Author and affiliation update — 2026-10-30
+
+Authoritative source: the 2026-10-28 `author.tex` in `AI4AI_survey (1).zip`. The 16-author order and all seven affiliation assignments are copied from the active LaTeX author block, excluding comments. Hao Wu and Sipeng Chen are no longer in the current author list. Jiamin Shi precedes Zhiqin Yang; Zhiqin Yang is affiliated with institution 7 (HKUST). The four corresponding authors and the three core-contribution markers are retained. The affiliation list and logo strip omit Wisconsin–Madison.
+
+The homepage citation and `citation.bib` have the same author order. `assets/AI4AI_survey_latest.pdf` is the matching 80-page manuscript, compiled from sources identical to this archive. All PDF named destinations resolve to the same pages as before, so existing figure and catalogue page references remain valid. The repository remains private and GitHub Pages stays disabled.

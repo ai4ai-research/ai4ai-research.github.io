@@ -2,7 +2,7 @@
 
 AI4AI: Toward AI-discovered Superintelligence
 
-这是一个完整的英文综述静态网站。页面结构参考 EVLA Survey。v3 已对齐新版稿件（72 页）：作者与通讯作者、摘要与关键词、各节页码、Figure 1–8、第 8 节开放问题与未来工作；并启用用户提供的 AI4AI logo 与 favicon。v4 按新版稿件重建了文献库：319 条参考文献按新编号与页码收录，第 4–7 节（L1–L3 各章与 Applications & Benchmarks）提到的全部 280 项工作带有稿件给出的等级、应用分支与出处；点击标题直接打开论文链接。构建规则见 `SOURCE_NOTES.md` 的 v4 一节。网站已通过 GitHub Pages 发布：https://ai4ai-research.github.io/。
+这是一个完整的英文综述静态网站。页面结构参考 EVLA Survey。v3 已对齐新版稿件（72 页）：作者与通讯作者、摘要与关键词、各节页码、Figure 1–8、第 8 节开放问题与未来工作；并启用用户提供的 AI4AI logo 与 favicon。v4 按新版稿件重建了文献库：319 条参考文献按新编号与页码收录，第 4–7 节（L1–L3 各章与 Applications & Benchmarks）提到的全部 280 项工作带有稿件给出的等级、应用分支与出处；点击标题直接打开论文链接。构建规则见 `SOURCE_NOTES.md` 的 v4 一节。仓库当前为私有，GitHub Pages 已暂停；恢复公开发布须由作者明确提出。
 
 ## 运行
 
@@ -34,7 +34,7 @@ python -m http.server 8000
 
 ## 页面结构
 
-1. Logo、论文标题、18 位作者（✉ 标注 4 位通讯作者）、8 个机构、联系邮箱、论文和引用入口。
+1. Logo、论文标题、16 位作者（✉ 标注 4 位通讯作者）、7 个机构、联系邮箱、论文和引用入口。
 2. Figure 1 概览、核心问题、完整摘要与关键词。
 3. L1 / L2 / L3 交互分节：Figure 2–3（L1）、Figure 4–5（L2）、Figure 6（L3），L0 基准和八种 D/S/E 来源组合。
 4. Learning、Inference、Data、Infrastructure 四个独立应用分支，附 Figure 7（总览）与 Figure 8（分类）。
@@ -82,4 +82,9 @@ python tools/make_standalone.py
 
 The site now follows AI4AI_survey (1).zip: 80 pages, 10 figures, 336 references, 297 surveyed works and 54 benchmarks. Mechanism and taxonomy figures share one caption and framing system. Taxonomies use vector SVG and readable horizontal scrolling; the figure viewer supports zoom and fit. The current downloadable manuscript is `assets/AI4AI_survey_latest.pdf`. See `SOURCE_NOTES.md` and `ASSET_MANIFEST.json` for provenance.
 
-GitHub Pages publishes the root of `main` automatically after committed updates.
+GitHub Pages is currently disabled and the repository remains private. Commit updates do not authorize resuming public publication.
+
+
+## Author and affiliation update — 2026-10-30
+
+The author list, affiliation numbers, institution logos and BibTeX citation now follow the 2026-10-28 source in `AI4AI_survey (1).zip`: 16 authors and 7 institutions. The current 80-page PDF is updated to the matching manuscript. All named-destination pages are unchanged.
