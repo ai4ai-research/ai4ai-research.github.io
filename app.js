@@ -234,7 +234,7 @@
 
     // Citations.
     const bibtex = $('#bibtex').textContent;
-    $('#copy-citation').addEventListener('click', () => copyText(bibtex, 'Manuscript citation copied.'));
+    $('#copy-citation').addEventListener('click', () => copyText(bibtex, 'Preprint citation copied.'));
     $('#download-citation').addEventListener('click', () => downloadFile('ai4ai-survey.bib', bibtex + '\n', 'application/x-bibtex;charset=utf-8'));
 
     // Catalogue: every work the survey places in a level chapter, an application family, or a benchmark list.

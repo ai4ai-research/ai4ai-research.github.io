@@ -2,7 +2,7 @@
 
 AI4AI: Toward AI-discovered Superintelligence
 
-这是一个完整的英文综述静态网站。页面结构参考 EVLA Survey。v3 已对齐新版稿件（72 页）：作者与通讯作者、摘要与关键词、各节页码、Figure 1–8、第 8 节开放问题与未来工作；并启用用户提供的 AI4AI logo 与 favicon。v4 按新版稿件重建了文献库：319 条参考文献按新编号与页码收录，第 4–7 节（L1–L3 各章与 Applications & Benchmarks）提到的全部 280 项工作带有稿件给出的等级、应用分支与出处；点击标题直接打开论文链接。构建规则见 `SOURCE_NOTES.md` 的 v4 一节。仓库当前为私有，GitHub Pages 已暂停；恢复公开发布须由作者明确提出。
+这是一个完整的英文综述静态网站。页面结构参考 EVLA Survey。v3 已对齐新版稿件（72 页）：作者与通讯作者、摘要与关键词、各节页码、Figure 1–8、第 8 节开放问题与未来工作；并启用用户提供的 AI4AI logo 与 favicon。v4 按新版稿件重建了文献库：319 条参考文献按新编号与页码收录，第 4–7 节（L1–L3 各章与 Applications & Benchmarks）提到的全部 280 项工作带有稿件给出的等级、应用分支与出处；点击标题直接打开论文链接。构建规则见 `SOURCE_NOTES.md` 的 v4 一节。仓库与 GitHub Pages 已于 2026-10-30 按作者要求恢复公开。
 
 ## 运行
 
@@ -23,7 +23,7 @@ python -m http.server 8000
 - `app.js`：导航、分节切换、责任来源演示、文献筛选、分页、弹窗和导出。
 - `data.js`：网页实际读取的文献数据。编辑文献时修改此文件。
 - `references.json`：同一份文献数据的导出快照；不会自动与 `data.js` 同步。
-- `citation.bib`：按所给稿件生成的 manuscript 引用，不编造年份或 arXiv 编号。
+- `citation.bib`：Preprints.org v1 预印本引用，包含 16 位作者、2026 年和 DOI `10.20944/preprints202610.2999.v1`。
 - `assets/`：所给论文、用户提供的 Figure 1 原始 JPEG、从新版 PDF 渲染的 Figure 2–8、透明背景 WebP 插图、机构标志，以及 logo 文件包中的 `ai4ai-logo.svg`（页眉与首屏）、`ai4ai-logo-on-dark.svg`（页脚）、`ai4ai-icon.svg` / `favicon.ico` / `apple-touch-icon.png`（浏览器图标）。
 - `originals/`：八张用户提供的 PNG 原文件，逐字节保存，未重绘或改色。
 - `ASSET_MANIFEST.json`：原文件与网页资源的对应关系、来源文件名、尺寸、裁切范围和校验值。
@@ -82,9 +82,13 @@ python tools/make_standalone.py
 
 The site now follows AI4AI_survey (1).zip: 80 pages, 10 figures, 336 references, 297 surveyed works and 54 benchmarks. Mechanism and taxonomy figures share one caption and framing system. Taxonomies use vector SVG and readable horizontal scrolling; the figure viewer supports zoom and fit. The current downloadable manuscript is `assets/AI4AI_survey_latest.pdf`. See `SOURCE_NOTES.md` and `ASSET_MANIFEST.json` for provenance.
 
-GitHub Pages is currently disabled and the repository remains private. Commit updates do not authorize resuming public publication.
+The repository and GitHub Pages were restored to public access at the author's explicit request on 2026-10-30.
 
 
 ## Author and affiliation update — 2026-10-30
 
 The author list, affiliation numbers, institution logos and BibTeX citation now follow the 2026-10-28 source in `AI4AI_survey (1).zip`: 16 authors and 7 institutions. The current 80-page PDF is updated to the matching manuscript. All named-destination pages are unchanged.
+
+## Preprint citation update · 2026-10-30
+
+The citation, copy button, BibTeX download and primary reading link now point to Preprints.org version 1, posted 29 October 2026: https://www.preprints.org/manuscript/202610.2999/v1 (DOI: 10.20944/preprints202610.2999.v1). The website continues to host the matching 80-page PDF for page-specific figure and literature links.
